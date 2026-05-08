@@ -1,6 +1,6 @@
 from typing import Annotated
 from fastapi import FastAPI, Query
-#pupupu
+#pupupu yes yes yes
 app = FastAPI()
 
 @app.get("/{id}")
