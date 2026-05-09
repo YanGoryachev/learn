@@ -1,7 +1,7 @@
 from typing import Annotated
 from pydantic import BaseModel, Field
 from fastapi import FastAPI, Body, Path
-#pupupu yes yes yes
+# teper seryozno
 app = FastAPI()
 
 class Model(BaseModel):
