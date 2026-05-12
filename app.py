@@ -1,6 +1,6 @@
 from typing import Annotated
 from pydantic import BaseModel, Field
-from fastapi import FastAPI, Body, Path
+from fastapi import FastAPI, Body, Path, Response
 from vnesh_app import vnesh_rout
 
 # teper seryozno
@@ -13,7 +13,9 @@ class Model(BaseModel):
 
 @app.get("/{id}")
 async def home(id:Annotated[int, Path(gt=3)]):
-    return id
+    a = Response()
+    a.set_cookie()
+    return Response()
 
 @app.post("/post")
 async def post(user:Annotated[Model, Body(max_length=10)]):
